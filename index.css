@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0C4A6E;
+    font-family: 'Karla', sans-serif;
+    color: #1e293b;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0F2FE;
+    width: 90%;
+    max-width: 600px;
+    margin: 10vh auto;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 10px solid #fff;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.highlighted-title {
+    color: #0284C7;
+    text-align: left;
+}
+
+.subtext {
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+.passwordField {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.password-line {
+    background-color: #7DD3FC;
+    width: 200px;
+    min-height: 24px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #F0F9FF;
+    text-align: center;
+    font-weight: bold;
+    color: #0c4a6e;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+    
+}
+
+.password-line:hover {
+    background-color: #bae6fd;
+}
+
+.generate-button {
+    padding: 12px 24px;
+    background-color: #0284C7;
+    border-radius: 8px;
+    border: none;
+    color: #F0F9FF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.generate-button:hover {
+    background-color: #0369a1;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 5vh auto;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .subtext {
+        font-size: 14px;
+    }
+    
+    .generate-button {
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    
+    .password-field {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .password-line {                font-size: 14px;
+        padding: 8px;
+    }
+}
